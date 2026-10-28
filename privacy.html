@@ -107,7 +107,7 @@
     <h3 id="c3">3. 数据存储在哪里</h3>
     <ul>
       <li><strong>默认仅保存在用户本机</strong>的浏览器存储中（IndexedDB / chrome.storage.local），直到用户删除会话或卸载扩展；</li>
-      <li>仅在用户主动触发"生成 SKILL / 同步"时，轨迹与可选的录屏分段才会通过 HTTPS 上传至<strong>用户所属组织部署的 YODO 服务端</strong>。该服务端的数据保留与删除遵循其所属组织的管理策略。</li>
+      <li>用户停止采集后，轨迹与可选的录屏分段会通过 HTTPS 自动上传至用户所属组织部署的 YODO 服务端<strong>用户所属组织部署的 YODO 服务端</strong>。该服务端的数据保留与删除遵循其所属组织的管理策略。</li>
     </ul>
 
     <h3 id="c4">4. 我们如何使用数据</h3>
@@ -170,7 +170,7 @@
     </div>
 
     <h3>3. Where data is stored</h3>
-    <p>By default, all data stays in the user's local browser storage (IndexedDB / chrome.storage.local) until the user deletes it or uninstalls the Extension. Data is uploaded over HTTPS to the YODO server deployed by the user's own organization only when the user explicitly requests SKILL generation or sync; retention on that server follows the organization's policies.</p>
+    <p>When the user stops a capture, the trace and optional screen-recording segments are automatically uploaded over HTTPS to the YODO server deployed by the user's own organization only when the user explicitly requests SKILL generation or sync; retention on that server follows the organization's policies.</p>
 
     <h3>4. How we use data</h3>
     <p>Solely to reconstruct the captured workflow, correlate actions with API calls, and generate SKILL documents for the user and their organization. We do <strong>not</strong> use data for advertising, profiling, credit assessment, or any unrelated purpose.</p>
