@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YODO 隐私政策 / Privacy Policy</title>
+<style>
+  :root {
+    --ink: #1f2330;
+    --sub: #5b6273;
+    --line: #e6e8ef;
+    --brand: #6366f1;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 15px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  header { padding: 56px 0 28px; border-bottom: 1px solid var(--line); }
+  .badge {
+    display: inline-block; padding: 3px 10px; border-radius: 999px;
+    background: #eef0ff; color: var(--brand);
+    font-size: 12px; font-weight: 600; letter-spacing: .04em;
+  }
+  h1 { margin: 14px 0 6px; font-size: 30px; line-height: 1.3; letter-spacing: -.01em; }
+  .meta { color: var(--sub); font-size: 13px; }
+  .meta code { background: #f4f5f9; padding: 1px 6px; border-radius: 4px; font-size: 12px; }
+  nav.toc { display: flex; flex-wrap: wrap; gap: 8px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+  nav.toc a {
+    padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px;
+    color: var(--sub); text-decoration: none; font-size: 13px;
+  }
+  nav.toc a:hover { border-color: var(--brand); color: var(--brand); }
+  section.lang { padding-top: 40px; }
+  h2.lang-title {
+    font-size: 13px; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--brand); margin: 0 0 8px; font-weight: 700;
+  }
+  h3 { font-size: 17px; margin: 34px 0 8px; }
+  p, li { color: #33384a; }
+  ul { padding-left: 22px; }
+  li { margin: 5px 0; }
+  .note {
+    margin: 18px 0; padding: 12px 16px; border-left: 3px solid var(--brand);
+    background: #f7f8ff; border-radius: 0 6px 6px 0; font-size: 14px;
+  }
+  .divider { margin: 64px 0 0; border: 0; border-top: 1px solid var(--line); }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--sub); font-size: 13px; }
+  a { color: var(--brand); }
+  @media (max-width: 560px) {
+    header { padding-top: 36px; }
+    h1 { font-size: 24px; }
+    body { font-size: 14.5px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="badge">YODO Chrome Extension</span>
+    <h1>YODO 隐私政策<br><span style="font-size:20px;color:#5b6273;">Privacy Policy</span></h1>
+    <p class="meta">
+      生效日期 / Effective date：<code>2026-10-28</code><br>
+      发布者 / Publisher：<code>[请替换为公司或团队名称]</code><br>
+      联系方式 / Contact：<code>[请替换为合规邮箱]</code>
+    </p>
+  </header>
+
+  <nav class="toc">
+    <a href="#zh">中文</a>
+    <a href="#c1">收集范围</a>
+    <a href="#c3">存储位置</a>
+    <a href="#c4">使用目的</a>
+    <a href="#c5">共享</a>
+    <a href="#c7">用户权利</a>
+    <a href="#en">English</a>
+  </nav>
+
+  <!-- ============================ 中文 ============================ -->
+  <section class="lang" id="zh">
+    <h2 class="lang-title">中文版</h2>
+
+    <h3>1. 我们是什么</h3>
+    <p>YODO 是一款操作采集与技能生成工具，帮助用户把在浏览器中完成的可复用操作过程记录为结构化的 SKILL 文档。</p>
+
+    <h3 id="c2">2. 我们收集哪些数据</h3>
+    <p>仅在用户主动点击"开始采集"后，且仅针对用户当时正在访问的页面：</p>
+    <ul>
+      <li><strong>页面交互信息</strong>：点击、输入（密码字段不记录值）、选择、表单提交、页面导航、标签页切换；</li>
+      <li><strong>网络请求信息</strong>：页面发出的 Fetch/XHR 请求的 URL、方法、请求头（Authorization / Cookie / Token 等敏感头部的值会被掩码）、请求体与响应体（单条截断至 10KB）；</li>
+      <li><strong>剪贴板事件</strong>：用户在当前页面触发复制 / 剪切 / 粘贴时的内容；</li>
+      <li><strong>可选录屏</strong>：用户显式开启后，记录所选屏幕或窗口的画面，并按段保存；</li>
+      <li><strong>可选语音旁白</strong>：用户显式开启后，通过浏览器提供的 Web Speech API 将语音转写为文字并存入轨迹。语音识别由浏览器实现，音频可能由浏览器厂商按其隐私政策处理，我们仅保存转写后的文本；</li>
+      <li><strong>基础配置</strong>：用户填写或选择的会话名称、工号（选填）及界面偏好。</li>
+    </ul>
+    <div class="note">
+      我们<strong>不收集</strong>：全局键盘输入（仅监听页面内表单输入事件）、与采集无关的浏览历史、精确位置、健康信息、金融账户信息。
+    </div>
+
+    <h3 id="c3">3. 数据存储在哪里</h3>
+    <ul>
+      <li><strong>默认仅保存在用户本机</strong>的浏览器存储中（IndexedDB / chrome.storage.local），直到用户删除会话或卸载扩展；</li>
+      <li>仅在用户主动触发"生成 SKILL / 同步"时，轨迹与可选的录屏分段才会通过 HTTPS 上传至<strong>用户所属组织部署的 YODO 服务端</strong>。该服务端的数据保留与删除遵循其所属组织的管理策略。</li>
+    </ul>
+
+    <h3 id="c4">4. 我们如何使用数据</h3>
+    <p>仅用于：还原用户的操作过程、建立操作与接口调用的关联、生成 SKILL 文档并供用户本人或其组织复用。<strong>不用于广告投放、用户画像、信用评估或任何与上述目的无关的用途。</strong></p>
+
+    <h3 id="c5">5. 数据共享</h3>
+    <ul>
+      <li>我们<strong>不会</strong>向任何第三方出售、出租或交易用户数据；</li>
+      <li>除用户主动同步至其所属组织服务端外，不上传至任何公网第三方服务；</li>
+      <li>不将数据用于判定信用度或贷款资格；</li>
+      <li>仅在法律法规明确要求时，于必要范围内配合提供。</li>
+    </ul>
+
+    <h3>6. 敏感信息与安全措施</h3>
+    <ul>
+      <li>密码字段不记录具体值；</li>
+      <li>Authorization、Cookie、Token、API Key 等头部值在存储前掩码；</li>
+      <li>对 password / token / secret / apiKey / csrf 等敏感字段模式进行识别与标注；</li>
+      <li>录屏与语音旁白<strong>默认关闭</strong>，需用户显式开启并授权；</li>
+      <li>生成脚本中的凭证一律参数化，不以明文硬编码。</li>
+    </ul>
+
+    <h3 id="c7">7. 用户权利</h3>
+    <p>用户可随时：停止采集；查看、导出或删除单条 / 全部本地会话；卸载扩展（本地数据随之清除）；通过组织管理员或下方邮箱请求删除已同步至服务端的数据。</p>
+
+    <h3>8. 儿童隐私</h3>
+    <p>本扩展面向职场用户，不面向 16 岁以下儿童，也不会主动收集其数据。</p>
+
+    <h3>9. 远程代码</h3>
+    <p>本扩展不加载或执行远程代码。所有可执行代码均打包在扩展程序内。技能内容由服务端生成，仅作为文本或文件在扩展内展示与下载，从不求值执行。</p>
+
+    <h3>10. 政策变更</h3>
+    <p>政策更新将在本页面发布并更新生效日期；重大变更会通过扩展内提示或版本发布说明告知用户。</p>
+
+    <h3>11. 联系我们</h3>
+    <p>邮箱：<a href="mailto:[请替换为合规邮箱]">[请替换为合规邮箱]</a></p>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ============================ English ============================ -->
+  <section class="lang" id="en">
+    <h2 class="lang-title">English</h2>
+
+    <h3>1. What YODO is</h3>
+    <p>YODO helps users capture a reusable web workflow and turn it into a structured SKILL document.</p>
+
+    <h3>2. Data we collect</h3>
+    <p>Only after the user explicitly starts a capture, and only for the page(s) being used at that time:</p>
+    <ul>
+      <li><strong>Page interactions</strong>: clicks, inputs (password values are never stored), selections, form submissions, navigation, tab switches;</li>
+      <li><strong>Network request data</strong>: URL, method, headers with Authorization / Cookie / Token values masked, and request/response bodies truncated to 10KB per record;</li>
+      <li><strong>Clipboard events</strong>: content copied, cut or pasted by the user on the current page;</li>
+      <li><strong>Optional screen recording</strong>: recording of a user-selected screen or window, stored in segments;</li>
+      <li><strong>Optional voice narration</strong>: speech transcribed to text by the browser's Web Speech API. Recognition is performed by the browser; audio may be processed by the browser vendor under its own policy. We store only the transcript;</li>
+      <li><strong>Basic settings</strong>: session name, optional staff ID, and UI preferences.</li>
+    </ul>
+    <div class="note">
+      We do <strong>not</strong> collect: global keystrokes, unrelated browsing history, precise location, health information, or financial account information.
+    </div>
+
+    <h3>3. Where data is stored</h3>
+    <p>By default, all data stays in the user's local browser storage (IndexedDB / chrome.storage.local) until the user deletes it or uninstalls the Extension. Data is uploaded over HTTPS to the YODO server deployed by the user's own organization only when the user explicitly requests SKILL generation or sync; retention on that server follows the organization's policies.</p>
+
+    <h3>4. How we use data</h3>
+    <p>Solely to reconstruct the captured workflow, correlate actions with API calls, and generate SKILL documents for the user and their organization. We do <strong>not</strong> use data for advertising, profiling, credit assessment, or any unrelated purpose.</p>
+
+    <h3>5. Data sharing</h3>
+    <p>We do <strong>not</strong> sell, rent, or trade user data. Apart from the user-initiated upload to their organization's server, no data is sent to any third party. Data is not used to determine creditworthiness or for lending purposes. We disclose data only when required by law.</p>
+
+    <h3>6. Sensitive data and security</h3>
+    <p>Password values are never stored; Authorization / Cookie / Token / API-key header values are masked before storage; sensitive field patterns (password, token, secret, apiKey, csrf) are detected and flagged; screen recording and voice narration are <strong>off by default</strong> and require explicit opt-in; credentials in generated scripts are always parameterized, never hard-coded.</p>
+
+    <h3>7. Your rights</h3>
+    <p>You may stop a capture at any time, view, export or delete any or all local sessions, uninstall the Extension to remove local data, and request deletion of server-side data through your organization administrator or the contact address below.</p>
+
+    <h3>8. Children</h3>
+    <p>The Extension is intended for professional users and is not directed to children under 16.</p>
+
+    <h3>9. Remote code</h3>
+    <p>The Extension does not load or execute remote code. All executable code is bundled in the extension package. Generated SKILL content is displayed and downloaded as text or files only, and is never evaluated.</p>
+
+    <h3>10. Changes</h3>
+    <p>Updates will be posted on this page with a new effective date; material changes will be communicated in-extension or in release notes.</p>
+
+    <h3>11. Contact</h3>
+    <p>Email: <a href="mailto:[please replace with compliance email]">[please replace with compliance email]</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 YODO. This page is the official privacy policy referenced by the YODO Chrome extension listing.</p>
+  </footer>
+
+</div>
+</body>
+</html>
